@@ -1,0 +1,130 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: content; }
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    font-weight: normal
+}
+.item2 {
+    background-color: rgb(33, 37, 41);
+}
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'main content';
+}
+.header--dark {
+    background-color: rgb(51, 57, 64);
+    color: rgb(236, 236, 236);
+    padding: 20px;
+}
+.header__title {
+    display: inline;
+    font-size: 1.25em;
+}
+.header__search {
+    display: inline;
+    position: relative;
+    left: 850px;
+}
+.search__input {
+    border-radius: 4px 0px 4px 0px 0px;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 0.375em;
+    padding-bottom: 0.375em;
+    font-size: 1.2em;
+    
+}
+.search__input:hover {
+    border: 5px solid rgb(128, 189, 255);
+    transition: border 15s;
+}
+.search__btn {
+    background-color: rgb(0, 123, 255);
+    color: white;
+    cursor: pointer;
+}
+.fa-search {
+    color: white;
+}
+.main__nav {
+    background-color: rgb(33, 37, 41);
+}
+.nav__ul {
+    list-style: none;
+    line-height: 50px;
+}
+.fejléc {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+a {
+    color: lightgray;
+    text-decoration: none;
+}
+a:hover {
+    color: gray;
+}
+.main__breadcrumb {
+    background-color: rgb(233, 236, 239);
+    border-radius: 25em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    color: gray;
+}
+.content {
+    padding: 20px
+}
+.main__cards {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.main__card {
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+    transition: background-color 3s;
+}
+.card__top {
+    width: 200px;
+    height: 70px;
+    border-radius: 25em 25em 0 0;
+    box-shadow: ;
+}
+.card__bottom {
+    width: 200px;
+    height: 20px;
+    border-radius: 0 0 25em 25em;
+}
+.main__card--blue {
+    background-color: rgb(0, 123, 255);
+}
+.main__card--yellow {
+    background-color: rgb(255, 193, 7);
+}
+.main__card--green {
+    background-color: rgb(40, 167, 69);
+}
+.main__card--red {
+    background-color: rgb(220, 53, 69);
+}
+.center {
+    float: left;
+    margin: 2px;
+  }
